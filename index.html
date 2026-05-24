@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --accent-color: #3498db;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tile {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            width: 100%;
+            max-width: 400px;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent-color);
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .tile h2 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .tile p {
+            margin: 0;
+            color: #7f8c8d;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- The link points to your subdirectory. Browsers automatically look for index.html inside it -->
+        <a href="autoQA_of_live_support_agent/" class="tile">
+            <span class="icon">🤖</span>
+            <h2>AutoQA of live support agents</h2>
+            <p>Click to open the automated quality assurance dashboard and view agent performance metrics.</p>
+        </a>
+    </div>
+
+</body>
+</html>
